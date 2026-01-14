@@ -255,7 +255,7 @@ a:focus-visible {
   right: 0;
   height: var(--header-height);
   z-index: 1000;
-  transition: background-color var(--transition-base);
+  transition: background-color var(--transition-base), box-shadow var(--transition-base);
 }
 
 .header.scrolled {
@@ -277,7 +277,12 @@ a:focus-visible {
 .header__logo img {
   height: 50px;
   width: auto;
-  transition: opacity var(--transition-fast);
+  transition: opacity var(--transition-fast), filter var(--transition-base);
+  filter: brightness(0) invert(1);
+}
+
+.header.scrolled .header__logo img {
+  filter: brightness(1) invert(0);
 }
 
 .header__logo:hover img {
@@ -295,12 +300,27 @@ a:focus-visible {
   font-size: var(--text-sm);
   font-weight: 500;
   letter-spacing: 0.02em;
-  color: var(--color-primary);
+  color: var(--color-white);
   text-transform: uppercase;
+  transition: color var(--transition-base);
+}
+
+.header.scrolled .header__nav-list a {
+  color: var(--color-primary);
 }
 
 .header__nav-list a:not(.btn):hover {
   color: var(--color-accent);
+}
+
+.header__nav-list a.btn {
+  border-color: var(--color-white);
+  color: var(--color-white);
+}
+
+.header.scrolled .header__nav-list a.btn {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 /* Mobile Menu Toggle */
@@ -322,8 +342,12 @@ a:focus-visible {
   display: block;
   width: 24px;
   height: 2px;
-  background-color: var(--color-primary);
+  background-color: var(--color-white);
   transition: all var(--transition-fast);
+}
+
+.header.scrolled .header__menu-toggle span {
+  background-color: var(--color-primary);
 }
 
 .header__menu-toggle[aria-expanded="true"] span:nth-child(1) {
