@@ -1191,6 +1191,23 @@ a:focus-visible {
   opacity: 0.6;
 }
 
+.footer__credit {
+  font-size: 0.7rem;
+  opacity: 0.4;
+  margin-top: var(--space-md);
+}
+
+.footer__credit a {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity var(--transition-fast);
+}
+
+.footer__credit a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
 /* ----------------------------------------
    Utility Classes
    ---------------------------------------- */
