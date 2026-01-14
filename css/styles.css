@@ -73,6 +73,7 @@
 html {
   scroll-snap-type: y proximity;
   scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
   font-size: 16px;
 }
 
@@ -437,6 +438,7 @@ a:focus-visible {
    ---------------------------------------- */
 .section {
   scroll-snap-align: start;
+  scroll-margin-top: var(--header-height);
   min-height: 100vh;
   display: flex;
   align-items: center;
