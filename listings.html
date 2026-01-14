@@ -79,6 +79,29 @@
             }
         }
 
+        .listing-card__coming-soon-badge {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: #b88732;
+            color: white;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            padding: 0.4rem 0.8rem;
+            z-index: 10;
+        }
+
+        .listing-card--coming-soon .listing-card__overlay {
+            opacity: 1;
+            background: rgba(0,0,0,0.4);
+        }
+
+        .listing-card--coming-soon .listing-card__overlay-cta {
+            display: none;
+        }
+
         .listings-back {
             padding: 3rem;
             text-align: center;
@@ -204,6 +227,69 @@
                         <p class="listing-card__price">$834,900</p>
                         <p class="listing-card__details">5 bed · 3 bath</p>
                         <p class="listing-card__location">Cedar City, UT</p>
+                    </div>
+                </article>
+
+                <!-- Coming Soon: 2407 E 4040 S -->
+                <article class="listing-card listing-card--coming-soon">
+                    <div class="listing-card__image-link">
+                        <div class="listing-card__image">
+                            <img src="2407.jpg" alt="Coming Soon - 2407 E 4040 S, St. George"
+                                class="listing-card__img" loading="lazy">
+                            <div class="listing-card__coming-soon-badge">Coming Soon</div>
+                            <div class="listing-card__overlay">
+                                <p class="listing-card__overlay-price">$1,750,000</p>
+                                <p class="listing-card__overlay-details">5 Bed · 4 Bath · 4,392 SqFt</p>
+                                <p class="listing-card__overlay-address">2407 E 4040 S<br>St. George, UT 84790</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-card__content">
+                        <p class="listing-card__price">$1,750,000</p>
+                        <p class="listing-card__details">5 bed · 4 bath · 4,392 sqft</p>
+                        <p class="listing-card__location">St. George, UT</p>
+                    </div>
+                </article>
+
+                <!-- To Be Built: Lot 105 Solente -->
+                <article class="listing-card listing-card--coming-soon">
+                    <div class="listing-card__image-link">
+                        <div class="listing-card__image">
+                            <img src="solentelot105.jpg" alt="To Be Built - Lot 105 Solente, St. George"
+                                class="listing-card__img" loading="lazy">
+                            <div class="listing-card__coming-soon-badge">To Be Built</div>
+                            <div class="listing-card__overlay">
+                                <p class="listing-card__overlay-price">$2,175,000</p>
+                                <p class="listing-card__overlay-details">4 Bed · 3 Bath · 4,614 SqFt</p>
+                                <p class="listing-card__overlay-address">Lot 105 Solente<br>St. George, UT</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-card__content">
+                        <p class="listing-card__price">$2,175,000</p>
+                        <p class="listing-card__details">4 bed · 3 bath · 4,614 sqft</p>
+                        <p class="listing-card__location">Solente, St. George</p>
+                    </div>
+                </article>
+
+                <!-- Lot: Altozano Resort Villa -->
+                <article class="listing-card listing-card--coming-soon">
+                    <div class="listing-card__image-link">
+                        <div class="listing-card__image">
+                            <img src="lopt1.jpg" alt="Lot - 1517 N Altozano Rd, Washington"
+                                class="listing-card__img" loading="lazy">
+                            <div class="listing-card__coming-soon-badge">Lot</div>
+                            <div class="listing-card__overlay">
+                                <p class="listing-card__overlay-price">$1,138,725</p>
+                                <p class="listing-card__overlay-details">Resort Villa Lot</p>
+                                <p class="listing-card__overlay-address">1517 N Altozano Rd<br>Washington, UT 84780</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-card__content">
+                        <p class="listing-card__price">$1,138,725</p>
+                        <p class="listing-card__details">Resort villa lot</p>
+                        <p class="listing-card__location">Washington, UT</p>
                     </div>
                 </article>
 
