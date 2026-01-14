@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Meet Utah's Elevated Real Estate Group - Your trusted partners in Southern Utah real estate. Experience, dedication, and client-focused service.">
+    <meta name="theme-color" content="#2D2D2D">
+
+    <title>About Us | Utah's Elevated Real Estate Group</title>
+
+    <!-- Preload critical assets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/listing-detail.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="assets/images/logo.webp">
+
+    <style>
+        .about-hero {
+            position: relative;
+            width: 100%;
+            height: 60vh;
+            min-height: 400px;
+            overflow: hidden;
+        }
+
+        .about-hero__image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .about-hero__overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.5) 100%);
+        }
+
+        .about-hero__content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 3rem;
+            color: white;
+            text-align: center;
+        }
+
+        .about-hero__title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .about-hero__subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            letter-spacing: 0.05em;
+        }
+
+        .about-content {
+            padding: 5rem 1.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .about-content__label {
+            display: block;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--color-accent, #8B7355);
+            margin-bottom: 1rem;
+        }
+
+        .about-content__headline {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            font-weight: 500;
+            color: var(--color-text, #2D2D2D);
+            margin-bottom: 2rem;
+            line-height: 1.3;
+        }
+
+        .about-content__text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--color-text-light, #555);
+            margin-bottom: 1.5rem;
+        }
+
+        .about-cta {
+            background: var(--color-dark, #2D2D2D);
+            padding: 4rem 1.5rem;
+            text-align: center;
+        }
+
+        .about-cta__inner {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .about-cta__headline {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            font-weight: 500;
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .about-cta__text {
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 2rem;
+            font-size: 1.05rem;
+        }
+
+        .about-cta .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: white;
+            color: var(--color-dark, #2D2D2D);
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            transition: all 0.3s ease;
+        }
+
+        .about-cta .btn:hover {
+            background: var(--color-accent, #8B7355);
+            color: white;
+        }
+
+        .about-back {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .about-back__link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--color-text-light, #555);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .about-back__link:hover {
+            color: var(--color-accent, #8B7355);
+        }
+    </style>
+</head>
+
+<body class="listing-detail-page">
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header header--dark" role="banner">
+        <div class="header__inner">
+            <a href="index.html" class="header__logo" aria-label="Utah's Elevated Real Estate Group - Home">
+                <img src="assets/images/logo.webp" alt="Utah's Elevated Real Estate Group" width="180" height="60">
+            </a>
+            <nav class="header__nav" aria-label="Main navigation">
+                <ul class="header__nav-list">
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="index.html#approach">Approach</a></li>
+                    <li><a href="index.html#listings">Properties</a></li>
+                    <li><a href="index.html#contact" class="btn btn--small">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="header__menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+
+        <!-- Hero Section -->
+        <section class="about-hero" aria-label="About hero">
+            <img src="teamall.jpeg" alt="Utah's Elevated Real Estate Group Team" class="about-hero__image">
+            <div class="about-hero__overlay"></div>
+            <div class="about-hero__content">
+                <h1 class="about-hero__title">Meet Our Team</h1>
+                <p class="about-hero__subtitle">Utah's Elevated Real Estate Group</p>
+            </div>
+        </section>
+
+        <!-- About Content -->
+        <section class="about-content" aria-label="About us">
+            <span class="about-content__label">Who We Are</span>
+            <h2 class="about-content__headline">Experience & Dedication in Every Transaction</h2>
+
+            <p class="about-content__text">
+                Utah's Elevated Real Estate Group brings a wealth of industry experience and an unwavering
+                commitment to client success. Our founder's diverse background, which includes running a
+                successful home staging business and managing numerous transactions, ensures tailored
+                guidance and steadfast support for every client.
+            </p>
+
+            <p class="about-content__text">
+                We are dedicated to your satisfaction and stand ready to be your trusted partner in the
+                world of real estate. Whether you're buying, selling, or investing, Utah's Elevated Real
+                Estate Group is here to help you achieve your goals, empowering you to make informed
+                decisions and attain lasting success in your real estate endeavors.
+            </p>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="about-cta" aria-label="Contact call to action">
+            <div class="about-cta__inner">
+                <h2 class="about-cta__headline">Ready to Get Started?</h2>
+                <p class="about-cta__text">
+                    Let's discuss your real estate goals and how we can help you achieve them.
+                </p>
+                <a href="index.html#contact" class="btn">Contact Us Today</a>
+            </div>
+        </section>
+
+        <!-- Back Link -->
+        <div class="about-back">
+            <a href="index.html" class="about-back__link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg>
+                Back to Home
+            </a>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer__inner">
+            <p class="footer__copyright">&copy; 2025 Utah's Elevated Real Estate Group. All rights reserved.</p>
+            <p class="footer__legal">Licensed real estate agents in the State of Utah</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>
