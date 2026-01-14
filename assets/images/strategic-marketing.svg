@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-label="Strategic Marketing - St. George Marketing">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2f2f2f"/>
+      <stop offset="1" stop-color="#232323"/>
+    </linearGradient>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0 0 0 0 0.05
+                0 0 0 0 0.85
+                0 0 0 0 1
+                0 0 0 0.9 0" result="cyanBlur"/>
+      <feMerge>
+        <feMergeNode in="cyanBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="spark" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+
+  <!-- Radar rings (bottom-left) -->
+  <g filter="url(#glow)" opacity="0.95">
+    <circle cx="260" cy="760" r="70" fill="none" stroke="#2fd3ff" stroke-width="8" opacity="0.9"/>
+    <circle cx="260" cy="760" r="120" fill="none" stroke="#2fd3ff" stroke-width="6" opacity="0.75"/>
+    <circle cx="260" cy="760" r="175" fill="none" stroke="#2fd3ff" stroke-width="5" opacity="0.6"/>
+    <circle cx="260" cy="760" r="235" fill="none" stroke="#2fd3ff" stroke-width="4" opacity="0.45"/>
+    <circle cx="260" cy="760" r="300" fill="none" stroke="#2fd3ff" stroke-width="3" opacity="0.3"/>
+
+    <!-- Small signal arcs -->
+    <path d="M210 800a60 60 0 0 1 60-60" fill="none" stroke="#2fd3ff" stroke-width="8" stroke-linecap="round" opacity="0.9"/>
+    <path d="M200 820a80 80 0 0 1 80-80" fill="none" stroke="#2fd3ff" stroke-width="7" stroke-linecap="round" opacity="0.75"/>
+    <path d="M190 842a105 105 0 0 1 105-105" fill="none" stroke="#2fd3ff" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+  </g>
+
+  <!-- Utah-inspired outline -->
+  <g>
+    <path
+      d="M360 210
+         L650 210
+         L650 315
+         L820 315
+         L820 735
+         L360 735
+         Z"
+      fill="none"
+      stroke="#ffffff"
+      stroke-width="16"
+      stroke-linejoin="miter"
+      opacity="0.96"
+    />
+    <!-- inner stroke for subtle depth -->
+    <path
+      d="M372 222
+         L638 222
+         L638 327
+         L808 327
+         L808 723
+         L372 723
+         Z"
+      fill="none"
+      stroke="#ffffff"
+      stroke-width="4"
+      opacity="0.55"
+    />
+  </g>
+
+  <!-- Spark point near lower-left of outline -->
+  <g filter="url(#spark)">
+    <circle cx="420" cy="690" r="6" fill="#e7fbff"/>
+    <path d="M420 670 L420 710" stroke="#b8f2ff" stroke-width="3" stroke-linecap="round"/>
+    <path d="M400 690 L440 690" stroke="#b8f2ff" stroke-width="3" stroke-linecap="round"/>
+    <path d="M406 676 L434 704" stroke="#b8f2ff" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+    <path d="M434 676 L406 704" stroke="#b8f2ff" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+  </g>
+
+  <!-- Label -->
+  <text x="90" y="940"
+    fill="#ffffff"
+    opacity="0.85"
+    font-family="DM Sans, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif"
+    font-size="28"
+    letter-spacing="2"
+  >ST. GEORGE MARKETING</text>
+</svg>
